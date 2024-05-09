@@ -3,7 +3,7 @@
 > 
 > <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" />&nbsp;
 
-This repository contains the dataset and benchmark DHAs of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheets for datasets is available in this repository as a pdf file.
+This repository contains the dataset and benchmark dehazing algorithms (DHAs) of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheets for datasets is available in this repository as a pdf file.
 
 The **RWIDE** is the real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-α and RWIDE-β, which total contain 2,450 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-α is captured by digital cameras, while RWIDE-β is sourced from webcams.  We have incorporated annotations into our dataset to improve the performance of dehazing models for natural-haze image restoration.
 
@@ -25,10 +25,10 @@ The dataset can be downloaded from the provided link. During training, validatio
 
 ## Annotation details
 
-**Scene classification.** The hazy scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). 
+**Scene classification.** The hazy scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). <br>
 **Sky-type classification.** The skies depicted by haze-free images in RWIDE are classified into four types: Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
 
-Scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it's labeled "0". In contrast, sky-type classification remains independent. Annotation information for all RWIDE images can be found in the provided xxx file.
+Scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it's labeled "0". In contrast, sky-type classification remains independent. Annotation information for all RWIDE images can be found in the provided **xxx file**.
 
 ## Who created this dataset?
 
@@ -40,7 +40,7 @@ Copyright (c) 2024 Cyber Security Laboratory
 
 This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
 
-All software for benchmark dehazing algorithms (DHAs) models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C2P-Net in the links below.
+All software for benchmark DHAs models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C2P-Net in the links below.
 
 | Year | Title                                                        | DHA          | Paper                                                        | Code                                                         |
 | ---- | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
