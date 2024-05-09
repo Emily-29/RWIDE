@@ -27,16 +27,18 @@ Scene classifications exhibit interdependence owing to overlap. A "1" label is a
 
 # Who created this dataset?
 
-The dataset is created by the authors of the paper.
+The dataset is created by the authors of the paper as well as the members of the Cyber Security Laboratory at Chongqing University
 
 # Licences
 
+Copyright (c) 2024 Cyber Security Laboratory
+
 RWIDE dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
 
-All software for benchmark dehazing algorithms (DHAs) models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C^2P-Net in the links below.
+All software for benchmark dehazing algorithms (DHAs) models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C$^2$P-Net in the links below.
 
 LGP (<https://github.com/zhengchaobing/Multi-scale-Single-Image-Dehazing-Using-Laplacian-and-Gaussian-Pyramids>)<br>SLP (<https://github.com/LPengYang/Saturation-Line-Prior>)<br>
 Light-DehazeNet (LD-Net) (<https://github.com/hayatkhan8660-maker/Light-DehazeNet>)<br>
 DehazeFormer (<https://github.com/IDKiro/DehazeFormer>)<br>
 PSMB-Net (<https://github.com/thislzm/PSMB-Net>)<br>
-C^2P-Net (<https://github.com/Polaris-F/C2PNet>)
+C$^2$P-Net (<https://github.com/Polaris-F/C2PNet>)
