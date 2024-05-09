@@ -35,9 +35,8 @@ RWIDE dataset is licensed under the Creative Commons Attribution-NonCommercial-S
 
 All software for benchmark dehazing algorithms (DHAs) models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C^2P-Net in the links below.
 
-LGP (<https://github.com/zhengchaobing/Multi-scale-Single-Image-Dehazing-Using-Laplacian-and-Gaussian-Pyramids>)
-SLP (<https://github.com/LPengYang/Saturation-Line-Prior>)
-Light-DehazeNet (LD-Net) (<https://github.com/hayatkhan8660-maker/Light-DehazeNet>)
-DehazeFormer (<https://github.com/IDKiro/DehazeFormer>)
-PSMB-Net (<https://github.com/thislzm/PSMB-Net>)
+LGP (<https://github.com/zhengchaobing/Multi-scale-Single-Image-Dehazing-Using-Laplacian-and-Gaussian-Pyramids>)<br>SLP (<https://github.com/LPengYang/Saturation-Line-Prior>)<br>
+Light-DehazeNet (LD-Net) (<https://github.com/hayatkhan8660-maker/Light-DehazeNet>)<br>
+DehazeFormer (<https://github.com/IDKiro/DehazeFormer>)<br>
+PSMB-Net (<https://github.com/thislzm/PSMB-Net>)<br>
 C^2P-Net (<https://github.com/Polaris-F/C2PNet>)
