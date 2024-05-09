@@ -5,7 +5,7 @@
 
 This repository contains the dataset and benchmark DHAs of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheets for datasets is available in this repository as a pdf file.
 
-The **RWIDE** is the real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-$\alpha$ and RWIDE-$\beta$, which total contain 2,450 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-$\alpha$ is captured by digital cameras, while RWIDE-$\beta$ is sourced from webcams.  We have incorporated annotations into our dataset to improve the performance of dehazing models for natural-haze image restoration.
+The **RWIDE** is the real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-α and RWIDE-β, which total contain 2,450 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-α is captured by digital cameras, while RWIDE-β is sourced from webcams.  We have incorporated annotations into our dataset to improve the performance of dehazing models for natural-haze image restoration.
 
 ## Why make this?
 
@@ -13,15 +13,15 @@ Haze degrades the quality of captured images, significantly impacting the perfor
 
 ## Download
 
-The RWIDE dataset can be downloaded as a single .zip file (~600 MB), or you can download RWIDE-$\alpha$ (~600 MB) and RWIDE-$\beta$ (~600 MB) separately:
+The RWIDE dataset can be downloaded as a single .zip file (~600 MB), or you can download RWIDE-α (~600 MB) and RWIDE-β (~600 MB) separately:
 
 **[Download RWIDE dataset](xxx)**<br>
-**[Download RWIDE-$\alpha$ dataset](xxx)**<br>
-**[Download RWIDE-$\beta$ dataset](xxx)**<br>
+**[Download RWIDE-α dataset](xxx)**<br>
+**[Download RWIDE-β dataset](xxx)**<br>
 
 ## How can I use this?
 
-The dataset can be downloaded from the provided link. During training, validation, and inference, simply normalize in your PyTorch DataLoader as typically done in most image dehazing models. It's worth noting that diverse shooting angles yield varied hazy image effects within the same scene. RWIDE-$\alpha$ consists of manually captured images, while RWIDE-$\beta$ is sourced from public webcams. RWIDE-$\alpha$ is ideal for restoring hazy images captured by humans, while RWIDE-$\beta$ is suited for webcam or surveillance perspectives. However, models trained solely on RWIDE may struggle to effectively dehaze images from alternative viewpoints, such as indoor or remote sensing scenarios.
+The dataset can be downloaded from the provided link. During training, validation, and inference, simply normalize in your PyTorch DataLoader as typically done in most image dehazing models. It's worth noting that diverse shooting angles yield varied hazy image effects within the same scene. RWIDE-α consists of manually captured images, while RWIDE-β is sourced from public webcams. RWIDE-α is ideal for restoring hazy images captured by humans, while RWIDE-β is suited for webcam or surveillance perspectives. However, models trained solely on RWIDE may struggle to effectively dehaze images from alternative viewpoints, such as indoor or remote sensing scenarios.
 
 ## Annotation details
 
@@ -40,14 +40,14 @@ Copyright (c) 2024 Cyber Security Laboratory
 
 This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
 
-All software for benchmark dehazing algorithms (DHAs) models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C$^2$P-Net in the links below.
+All software for benchmark dehazing algorithms (DHAs) models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C2P-Net in the links below.
 
 | Year | Title                                                        | DHA          | Paper                                                        | Code                                                         |
 | ---- | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 2021 | Multi-scale single image dehazing using Laplacian and Gaussian pyramids | LGP          | <a href="https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9606591&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2Fic3RyYWN0L2RvY3VtZW50Lzk2MDY1OTE="><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/zhengchaobing/Multi-scale-Single-Image-Dehazing-Using-Laplacian-and-Gaussian-Pyramids"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
 | 2023 | Single Image Dehazing Using Saturation Line Prior            | SLP          | <a href="https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10141557&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2Fic3RyYWN0L2RvY3VtZW50LzEwMTQxNTU3"><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/LPengYang/Saturation-Line-Prior"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
 | 2021 | Light-DehazeNet: a novel lightweight CNN architecture for single image dehazing | LD-Net       | <a href="https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9562276&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2Fic3RyYWN0L2RvY3VtZW50Lzk1NjIyNzY="><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/hayatkhan8660-maker/Light-DehazeNet"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
-| 2023 | Vision transformers for single image dehazing                | DehazeFormer | <a href="https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9562276&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2Fic3RyYWN0L2RvY3VtZW50Lzk1NjIyNzY="><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/IDKiro/DehazeFormer"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
+| 2023 | Vision transformers for single image dehazing                | DehazeFormer | <a href="https://ieeexplore.ieee.org/ielx7/83/9991910/10076399.pdf?tp=&arnumber=10076399&isnumber=9991910&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2Fic3RyYWN0L2RvY3VtZW50LzEwMDc2Mzk5"><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/IDKiro/DehazeFormer"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
 | 2023 | Partial Siamese with Multiscale Bi-codec Networks for Remote Sensing Image Haze Removal | PSMB-Net     | <a href="https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10268954&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2Fic3RyYWN0L2RvY3VtZW50LzEwMjY4OTU0"><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/thislzm/PSMB-Net"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
-| 2023 | Curricular contrastive regularization for physics-aware single image dehazing | C$^2$P-Net   | <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zheng_Curricular_Contrastive_Regularization_for_Physics-Aware_Single_Image_Dehazing_CVPR_2023_paper.pdf"><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/Polaris-F/C2PNet"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
+| 2023 | Curricular contrastive regularization for physics-aware single image dehazing | C2P-Net      | <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zheng_Curricular_Contrastive_Regularization_for_Physics-Aware_Single_Image_Dehazing_CVPR_2023_paper.pdf"><img src="https://img.shields.io/badge/paper-7F7F7F"/></a> | <a href="https://github.com/Polaris-F/C2PNet"><img src="https://img.shields.io/badge/code-ffff00"/></a> |
 
