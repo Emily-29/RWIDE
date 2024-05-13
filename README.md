@@ -1,5 +1,5 @@
 ## RWIDE: A Real-World Image Dehazing Dataset
-> ###### [Overview](#RWIDE: A Real-World Image Dehazing Dataset) | [Download](#download) | [License](#license) 
+> ###### [Overview](#RWIDE) | [Download](#download) | [License](#license) 
 > 
 > <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" />&nbsp;
 
