@@ -1,18 +1,17 @@
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-
 os.chdir("..")
-from copy import deepcopy
 
-import natsort
-import torch
 import cv2
+import torch
 import random
 import pickle
+import natsort
 import numpy as np
+from copy import deepcopy
 import matplotlib.cm as cm
-from src.utils.plotting import make_matching_figure
 from src.loftr import LoFTR, default_cfg
+from src.utils.plotting import make_matching_figure
 
 # The default config uses dual-softmax.
 # The outdoor and indoor models share the same config.
