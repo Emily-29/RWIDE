@@ -1,1 +1,1 @@
-Please download the keypoints (.pkl file) or generate the keypoints (.pkl file) for your data.
+Please download the keypoints (.pkl file) or generate them for your data.
