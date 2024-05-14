@@ -24,7 +24,7 @@ The dataset can be downloaded from the provided link. During training, validatio
 ## Annotation details
 
 **Scene classification.** The hazy scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). <br>
-**Sky-type classification.** The skies depicted by haze-free images in RWIDE are classified into four types: Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
+**Sky-type classification.** The skies depicted by haze-free images in RWIDE are classified into five types:  No Sky Visible (NSV), Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
 
 Scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it's labeled "0". In contrast, sky-type classification remains independent. Annotation information for all RWIDE images can be found in the provided **xxx file**.
 
