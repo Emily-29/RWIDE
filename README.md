@@ -5,7 +5,7 @@
 
 This repository contains the dataset and benchmark dehazing algorithms (DHAs) of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheets for datasets is available in this repository as a pdf file.
 
-The **RWIDE** is the real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-α and RWIDE-β, which total contain 2,450 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-α is captured by digital cameras, while RWIDE-β is sourced from webcams.  We have incorporated annotations into our dataset to improve the performance of dehazing models for natural-haze image restoration.
+The **RWIDE** is the real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-α and RWIDE-β, which total contain 2,455 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-α is captured by digital cameras, while RWIDE-β is sourced from webcams.  We have incorporated annotations into our dataset to improve the performance of dehazing models for natural-haze image restoration.
 
 ## Why make this?
 
