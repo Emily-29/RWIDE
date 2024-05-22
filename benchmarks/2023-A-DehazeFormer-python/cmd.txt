@@ -1,0 +1,10 @@
+conda activate torch-cuda-11.7
+
+test:
+python test.py --model dehazeformer-b --exp outdoor
+python test.py --model dehazeformer-t --exp reside6k
+
+train:
+python train.py --model dehazeformer-b --exp outdoor
+
+model saved in saved_models/outdoor
