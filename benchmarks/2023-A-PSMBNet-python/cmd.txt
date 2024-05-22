@@ -1,0 +1,10 @@
+conda activate pytorch
+cd PSBDN
+
+test:
+python test.py
+
+train:
+python train.py
+
+model saved in output_result/task
