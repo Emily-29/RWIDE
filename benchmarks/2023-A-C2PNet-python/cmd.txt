@@ -1,7 +1,0 @@
-conda activate pytorch
-
-test:
-python dehaze.py
-
-train:
-python main.py
