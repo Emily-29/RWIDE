@@ -13,9 +13,9 @@ Haze degrades the quality of captured images, significantly impacting the perfor
 
 ## Download
 
-You can download RWIDE-α (~600 MB) and RWIDE-β (~950 MB) separately:<br>
+You can download RWIDE-α (~1.8 GB) and RWIDE-β (~900 MB) separately:<br>
 **[RWIDE-α](xxx)**<br>
-RWIDE-β: **[RWMHDE](https://www.icloud.com.cn/iclouddrive/063rSWDbK7D3e-4UdItO43-cw#RWMHDE)**   **[RWSHDE](https://www.icloud.com.cn/iclouddrive/0e9pH6FRinChU4A6KfIcuYDPw#RWSHDE)**   **[RWRSDE](https://www.icloud.com.cn/iclouddrive/0e8wJycmkT27M2qgcIuUS_Y0g#RWRSDE)**<br>
+**[RWIDE-β](xxx)**<br>
 
 ## How can I use this?
 

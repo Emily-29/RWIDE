@@ -35,10 +35,10 @@ for i in range(len(hazy_image_names)):
         # clear_image_name = hazy_image_names[i][:-9] + '_GT.jpg'  # O-HAZE
         # clear_image_name = hazy_image_names[i][:-9] + '_GT.png'  # NH-HAZE
         # clear_image_name = hazy_image_names[i][:-6] + '.jpg'  # RW-HAZE
-        # clear_image_name = hazy_image_names[i].split('_')[0]+'.jpg'  # MRFID/RESIDE/RWMHDE
+        # clear_image_name = hazy_image_names[i].split('_')[0]+'.jpg'  # MRFID/RESIDE/RWIDE-beta1
         # clear_image_name = hazy_image_names[i].split('_')[0]+'_clear.png'  # BeDDE
 
-        clear_image_path = os.path.join(clear_dir, hazy_image_names[i])  # RWSHDE/RWRSDE/RWIDE-alpha
+        clear_image_path = os.path.join(clear_dir, hazy_image_names[i])  # RWIDE-beta2/RWIDE-beta3/RWIDE-alpha
         # clear_image_path = os.path.join(clear_dir, clear_image_name)
         hazy_image_path = os.path.join(hazy_dir, hazy_image_names[i])
         
