@@ -1,42 +1,42 @@
 ## RWIDE: A Real-World Image Dehazing Dataset
-> ###### [Overview](#RWIDE) | [Download](#download) | [License](#license) 
-> 
-> <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" />&nbsp;
+> ###### [Overview](#rwide-a-real-world-image-dehazing-dataset) | [Download](#download) | [License](#license) 
+>
+> <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" /></a>&nbsp; <a href="https://sites.google.com/site/xiangtaooo/home"><img src="https://img.shields.io/badge/download-.zip-ff69b4.svg" alt="Download" /></a>&nbsp;
 
-This repository contains the dataset and benchmark dehazing algorithms (DHAs) of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheets for datasets is available in this repository as a pdf file.
+This repository contains the dataset and benchmark dehazing algorithms (DHAs) of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheets for datasets is available in this repository as a *pdf* file.
 
-The **RWIDE** is the real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-α and RWIDE-β, which total contain 2,455 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-α is captured by digital cameras, while RWIDE-β is sourced from webcams.  We have incorporated annotations into our dataset to improve the performance of dehazing models for natural-haze image restoration.
+The **RWIDE** is a real-world hazy image dataset with annotations for multiple outdoor scenes. It comprises two parts: RWIDE-α and RWIDE-β, which total contain 2,455 pairs of haze-free and hazy images. Annotations include six haze scene types and five sky region types. RWIDE-α is captured by digital cameras, while RWIDE-β is sourced from webcams.  
 
 ## Why make this?
 
-Haze degrades the quality of captured images, significantly impacting the performance of various image processing algorithms and vision-driven applications such as image segmentation, object detection, and video surveillance. Image dehazing is a meaningful but ill-posed task aimed at generating clear images from hazy ones. Current research typically employs synthetic or artificial haze datasets, constraining their utility in real-world contexts. Moreover, natural haze datasets are often deficient in paired samples and fail to offer a broad spectrum of scene diversity. To the best of our knowledge, RWIDE is the first real-world hazy image dataset with annotations for multiple scenes.
+Image dehazing is a crucial yet intrinsically challenging endeavor, focused on producing clear images from hazy ones. However, existing natural-haze image datasets lack diversity and an adequate number of hazy and haze-free image pairs. Dehazing natural-haze images is especially arduous due to the intricate haze distribution and distinctive optical effects, and current research frequently depends on synthetic or artificial-haze data, thereby constraining their relevance to real-world scenarios. To the best of our knowledge, RWIDE is the first real-world hazy image dataset with annotations for multiple scenes, which can promote further research on image restoration and dehazing tasks.
 
 ## Download
 
-You can download the RWIDE-α (~1.8 GB) and RWIDE-β (~900 MB) datasets and their corresponding annotation files (.csv) respectively:<br>**[RWIDE-α](https://www.icloud.com.cn/iclouddrive/0b7iNLm1yi5nHUSs6jlyqzSzw#RWIDE-alpha)**<br>**[RWIDE-β](https://www.icloud.com.cn/iclouddrive/0b5HKomNO5sFuRluHqn3AbROw#RWIDE-beta)**<br>**[Annotations](https://www.icloud.com.cn/iclouddrive/0eboZUDAf949CYo4dbU27GWNQ#annotations)**<br>
+You can download the  **[RWIDE](https://sites.google.com/site/xiangtaooo/home)** dataset (~2.70 GB) including .
 
 ## How can I use this?
 
-The dataset can be downloaded from the provided link. During training, validation, and inference, simply normalize in your PyTorch DataLoader as typically done in most image dehazing models. It's worth noting that diverse shooting angles yield varied hazy image effects within the same scene. RWIDE-α consists of manually captured images, while RWIDE-β is sourced from public webcams. RWIDE-α is ideal for restoring hazy images captured by humans, while RWIDE-β is suited for webcam or surveillance perspectives. However, models trained solely on RWIDE may struggle to effectively dehaze images from alternative viewpoints, such as indoor or remote sensing scenarios.
+The dataset can be downloaded from the provided link. During training, validation, and inference, simply normalize in your PyTorch DataLoader as typically done in most image dehazing models. It's worth noting that diverse shooting angles yield varied hazy image effects within the same scene. RWIDE primarily documents haze from ground-level photography and fixed webcams or surveillance cameras, which could limit model applicability to other perspectives like indoor or remote sensing scenarios. We encourage future researchers to expand this dataset by collecting data from other shooting perspectives to enhance its richness and applicability.
 
 ## Annotation details
 
-**Scene classification.** The hazy scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). <br>
-**Sky-type classification.** The skies depicted by haze-free images in RWIDE are classified into five types:  No Sky Visible (NSV), Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
+**Scene-type classification.**<br> The hazy scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). <br>
+**Sky-type classification.** <br>The skies depicted by haze-free images in RWIDE are classified into five types:  No Sky Visible (NSV), Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
 
-Scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it's labeled "0". In contrast, sky-type classification remains independent. Annotation information for all RWIDE images can be found in the provided **xxx file**.
+Scene-type classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it's labeled "0". In contrast, sky-type classification remains independent. Annotation information for all images can be found in the provided annotation files (.*csv*).
 
 ## Who created this dataset?
 
-The dataset is created by the authors of the paper as well as the members of the Cyber Security Laboratory at Chongqing University.
+The dataset is created by the authors of the paper as well as the members of the Image Processing and Security Laboratory at Chongqing University.
 
 ## License
 
-Copyright (c) 2024 Cyber Security Laboratory
+Copyright (c) 2024 Image Processing and Security Laboratory
 
 This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
 
-All benchmark DHAs models adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C2P-Net in the links below.
+All benchmark DHAs adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD-Net),  DehazeFormer, PSMB-Net and C2P-Net in the links below.
 
 | Year | Title                                                        | DHA          | Paper                                                        | Code                                                         |
 | ---- | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
