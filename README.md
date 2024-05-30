@@ -13,7 +13,7 @@ Image dehazing is a crucial yet intrinsically challenging endeavor, focused on p
 
 ## Download
 
-You can download the  **[RWIDE](https://sites.google.com/site/xiangtaooo/home)** dataset (~2.70 GB) including .
+You can download the  **[RWIDE](https://sites.google.com/site/xiangtaooo/home)** dataset (~2.70 GB) including annotation files (.*csv*).
 
 ## How can I use this?
 
