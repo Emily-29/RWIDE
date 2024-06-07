@@ -11,7 +11,7 @@ The **RWIDE** is a real-world hazy image dataset with annotations for multiple o
 
 We have invested significant effort into collecting image pairs depicting various road environments, such as urban roads, rural roads, highways, forest roads, leisure trails, community roads, bends, tunnel entrances, roundabouts, zebra crossings, and other environments.
 
-![](imgs/ground_scene.jpg)
+![](imgs/road_scene.jpg)
 
 ## Annotation details
 
