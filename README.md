@@ -46,40 +46,40 @@ The dataset we provide does not contain any offensive content. We, the authors, 
 ```text
 /RWIDE
 ├── annotations
-|	└── annotations-RWIDE-alpha.csv
+│	└── annotations-RWIDE-alpha.csv
 ├── RWIDE-alpha
-│   ├── clear
+│   	├── clear
 │	│	├── 001.jpg
 │	│	└── 002.jpg
-│   ├── hazy
+│   	├── hazy
 │	│	├── 001.jpg
 │	│	└── 002.jpg
-│   └── hazy_align
+│   	└── hazy_align
 │		├── 001.jpg
 │		└── 002.jpg
 └── RWIDE-beta
-    ├── RWIDE-beta1
-    │   ├── clear
-    |	|	├── 001.jpg
-    |	|	└── 002.jpg
-    │   ├── hazy
-    |	|	├── 001_01.jpg
-    |	|	├── 001_02.jpg
-    |	|	├── 001_03.jpg
-    |	|	└── 002_01.jpg
-    │   └── hazy_align
-    |   	├── 001_01.jpg
-    |		├── 001_02.jpg
-    |		├── 001_03.jpg
-    |		└── 002_01.jpg
-    ├── RWIDE-beta2
-    │   ├── clear
-    │   ├── hazy
-    │   └── hazy_align
-    └── RWIDE-beta3
-        ├── clear
-        ├── hazy
-        └── hazy_align
+         ├── RWIDE-beta1
+         │   	 ├── clear
+         │	 │	 ├── 001.jpg
+   	 │	 │	 └── 002.jpg
+   	 │   	 ├── hazy
+   	 │	 │	 ├── 001_01.jpg
+   	 │	 │ 	 ├── 001_02.jpg
+    	 │	 │	 ├── 001_03.jpg
+  	 │	 │	 └── 002_01.jpg
+  	 │   	 └── hazy_align
+  	 │   	    	 ├── 001_01.jpg
+    	 │		 ├── 001_02.jpg
+ 	 │		 ├── 001_03.jpg
+ 	 │		 └── 002_01.jpg
+ 	 ├── RWIDE-beta2
+ 	 │     ├── clear
+ 	 │     ├── hazy
+ 	 │     └── hazy_align
+ 	 └── RWIDE-beta3
+         	 ├── clear
+          	 ├── hazy
+           	 └── hazy_align
 ```
 
 - [`annotations/*.csv`]()
