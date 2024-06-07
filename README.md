@@ -33,7 +33,7 @@ Each image pair in RWIDE is accompanied by annotations. These annotations catego
 
 ![](imgs/sky_scene.jpg)
 
-Ground scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it's labeled "0". In contrast, sky scene classification remains independent. Annotation information for all images can be found in the provided annotation files (.*csv*).
+Ground scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it is labeled "0". In contrast, sky scene classification remains independent. Annotation information for all images can be found in the provided annotation files (.*csv*).
 
 ## Download
 
@@ -123,7 +123,7 @@ The dataset we provide does not contain any offensive content. We, the authors, 
   `{IMAGE_NAME}_{ID}.jpg` (when the folder is '*RWIDE-beta1/hazy*' or '*RWIDE-beta1/hazy_align*')
 
   - `{IMAGE_NAME}` - name of the images ranges from '*001*' to '*max_number*',
-  - `{ID}` - index of the haze depth ('01', '02' or '03').
+  - `{ID}` - index of the haze depth ('*01*', '*02*' or '*03*').
 
 ## Why make this?
 
@@ -131,7 +131,7 @@ Image dehazing is a crucial yet intrinsically challenging endeavor, focused on p
 
 ## How can I use this?
 
-The dataset can be downloaded from the provided link. During training, validation, and inference, simply normalize in your PyTorch DataLoader as typically done in most image dehazing models. It's worth noting that diverse shooting angles yield varied hazy image effects within the same scene. RWIDE primarily documents haze from ground-level photography and fixed webcams or surveillance cameras, which could limit model applicability to other perspectives like indoor or remote sensing scenarios. We encourage future researchers to expand this dataset by collecting data from other shooting perspectives to enhance its richness and applicability.
+The dataset can be downloaded from the provided link. During training, validation, and inference, simply normalize in your PyTorch DataLoader as typically done in most image dehazing models. It is worth noting that diverse shooting angles yield varied hazy image effects within the same scene. RWIDE primarily documents haze from ground-level photography and fixed webcams or surveillance cameras, which could limit model applicability to other perspectives like indoor or remote sensing scenarios. We encourage future researchers to expand this dataset by collecting data from other shooting perspectives to enhance its richness and applicability.
 
 ## Who created this dataset?
 
