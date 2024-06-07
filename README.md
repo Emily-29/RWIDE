@@ -68,10 +68,10 @@ The dataset we provide does not contain any offensive content. We, the authors, 
     |	|	├── 001_03.jpg
     |	|	└── 002_01.jpg
     │   └── hazy_align
-    |   	├── 001_01.jpg
-    |		├── 001_02.jpg
-    |		├── 001_03.jpg
-    |		└── 002_01.jpg
+    |   ├── 001_01.jpg
+    |	├── 001_02.jpg
+    |	├── 001_03.jpg
+    |	└── 002_01.jpg
     ├── RWIDE-beta2
     │   ├── clear
     │   ├── hazy
