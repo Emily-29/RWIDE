@@ -3,7 +3,7 @@
 >
 > <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" /></a>&nbsp; <a href="https://sites.google.com/site/xiangtaooo/home"><img src="https://img.shields.io/badge/download-.zip-ff69b4.svg" alt="Download" /></a>&nbsp;
 
-This repository contains the dataset and additional resources of the paper "RWIDE: A Real-World Image Dehazing Dataset". The datasheet for our dataset is available in this repository as a *pdf* file. 
+This repository contains the dataset and additional resources of the paper "*RWIDE: A Real-World Image Dehazing Dataset*". The datasheet for our dataset is available in this repository as a *PDF* file. 
 
 <img src="imgs/tmp.gif" align="right" />
 
@@ -37,7 +37,81 @@ Ground scene classifications exhibit interdependence owing to overlap. A "1" lab
 
 ## Download
 
-You can download the  **[RWIDE](https://sites.google.com/site/xiangtaooo/home)** dataset including annotation files (.*csv*)  (~2.70 GB) .
+You can download the  **[RWIDE](https://sites.google.com/site/xiangtaooo/home)** dataset including annotation files  (~2.70 GB) .
+
+## Directory Structure
+
+The dataset we provide does not contain any offensive content. We, the authors, bear all responsibility for withdrawing our paper and data in case of violating licensing or privacy rights and for confirming the data license. The curated data is organized as below:
+
+```text
+/RWIDE
+├── annotations
+|	└── annotations-RWIDE-alpha.csv
+├── RWIDE-alpha
+│   ├── clear
+│	│	├── 001.jpg
+│	│	└── 002.jpg
+│   ├── hazy
+│	│	├── 001.jpg
+│	│	└── 002.jpg
+│   └── hazy_align
+│		├── 001.jpg
+│		└── 002.jpg
+└── RWIDE-beta
+    ├── RWIDE-beta1
+    │   ├── clear
+    |	|	├── 001.jpg
+    |	|	└── 002.jpg
+    │   ├── hazy
+    |	|	├── 001_01.jpg
+    |	|	├── 001_02.jpg
+    |	|	├── 001_03.jpg
+    |	|	└── 002_01.jpg
+    │   └── hazy_align
+    |   	├── 001_01.jpg
+    |		├── 001_02.jpg
+    |		├── 001_03.jpg
+    |		└── 002_01.jpg
+    ├── RWIDE-beta2
+    │   ├── clear
+    │   ├── hazy
+    │   └── hazy_align
+    └── RWIDE-beta3
+        ├── clear
+        ├── hazy
+        └── hazy_align
+```
+
+- [`annotations/*.csv`]()
+
+  Four annotation files in *CSV* format with the following naming convention:
+
+  `annotations-RWIDE-{SUB_NAME}.csv`
+
+  - `{SUB_NAME}` - name of the subdataset.
+
+  *CSV* file with the following structure:
+
+  | Image Name |  MH  |  LR  |  FJ  |  BC  |  RS  |  SS  | NSV  | OCS  | OCCS | SCBS | SBSC |
+  | :--------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+
+- [`RWIDE-{SUB_NAME}/{TYPE_NAME}`]()
+
+  Four subdatasets with the following naming convention:
+
+  - `{SUB_NAME}` - name of the subdataset,
+  - `{TYPE_NAME}` - name of the image type (*clear*, *hazy*, and *hazy_align*).
+
+- [`RWIDE-{SUB_NAME}/{TYPE_NAME}/*.jpg`]()
+
+  Images in *JPG* format with the following naming convention:
+
+  `{IMAGE_NAME}.jpg`
+
+  `{IMAGE_NAME}_{ID}.jpg` (when the folder is '*RWIDE-beta1/hazy*' or '*RWIDE-beta1/hazy_align*')
+
+  - `{IMAGE_NAME}` - name of the images ranges from '*001*' to '*max_number*',
+  - `{ID}` - index of the haze depth ('01', '02' or '03').
 
 ## Why make this?
 
