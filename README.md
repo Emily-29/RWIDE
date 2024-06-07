@@ -46,7 +46,7 @@ The dataset we provide does not contain any offensive content. We, the authors, 
 ```text
 /RWIDE
 ├── annotations
-│   └── annotations-RWIDE-beta3.csv
+│   └── annotations-RWIDE-alpha.csv
 ├── RWIDE-alpha
 │   ├── clear
 │   │   ├── 001.jpg
