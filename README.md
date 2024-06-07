@@ -5,7 +5,7 @@
 
 This repository contains the dataset and additional resources of the paper "*RWIDE: A Real-World Image Dehazing Dataset*". The datasheet for our dataset is available in this repository as a *PDF* file. 
 
-<img src="imgs/tmp.gif" align="right" />
+<img src="imgs/demo.gif" align="right" />
 
 Image dehazing, producing clear images from hazy ones, is a crucial yet intrinsically challenging endeavor. However, existing natural-haze image datasets lack diversity and an adequate number of hazy and haze-free image pairs. Dehazing natural-haze images is especially arduous due to the intricate haze distribution and distinctive optical effects, and current research frequently depends on synthetic- or artificial-haze data, thereby constraining their relevance to real-world scenarios. To fill this gap, in this paper, we introduce a **R**eal-**W**orld **I**mage **DE**hazing dataset (**RWIDE**), the first large-scale hazy image dataset with multi-scene annotations that contains 2,455 image pairs.  Our RWIDE dataset is divided into RWIDE-α and RWIDE-β, with the latter containing three subdatasets: RWIDE-β1, RWIDE-β2, and RWIDE-β3.
 
