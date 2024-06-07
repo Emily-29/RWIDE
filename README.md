@@ -9,10 +9,10 @@ This repository contains the dataset and additional resources of the paper "RWID
 
 Image dehazing, producing clear images from hazy ones, is a crucial yet intrinsically challenging endeavor. However, existing natural-haze image datasets lack diversity and an adequate number of hazy and haze-free image pairs. Dehazing natural-haze images is especially arduous due to the intricate haze distribution and distinctive optical effects, and current research frequently depends on synthetic- or artificial-haze data, thereby constraining their relevance to real-world scenarios. To fill this gap, in this paper, we introduce a **R**eal-**W**orld **I**mage **DE**hazing dataset (**RWIDE**), the first large-scale hazy image dataset with multi-scene annotations that contains 2,455 image pairs.  Our RWIDE dataset is divided into RWIDE-α and RWIDE-β, with the latter containing three subdatasets: RWIDE-β1, RWIDE-β2, and RWIDE-β3.
 
-**RWIDE-α dataset**
-Image pairs in RWIDE-α are manually captured using the *ProRAW Max* format of an Apple iPhone 15 Pro. We select Chongqing, China, as our location for capturing natural-haze images. Nestled among mountains and positioned at the confluence of the Yangtze and Jialing Rivers, the city provides optimal high-humidity conditions for data acquisition. We select hazy weather conditions with visibility under 10 kilometers for shooting. The camera is positioned 1.5–2 meters above the ground. Following the acquisition of the hazy images, precise geotagging is conducted. We select weather conditions with moderate sunlight to obtain haze-free images to avoid strong shadows. The tripod is secured for *Adobe RAW* image capture in each scene. For each haze scene, we capture 20 haze-free images. Then, five volunteers manually choose the best-aligned image pair based on their assessment. The hazy images are 5712 × 4284 pixels with a 24-bit depth, while the haze-free images with lens masks cost 2880 × 2160. In our public dataset, haze-free and hazy images are uniformly resized. Camera parameters are set to factory defaults, but with the *ProRAW \& Resolution Control* switch enabled and *Pro Default* selected as *ProRAW Max*.
+**RWIDE-α dataset**<br>
+Image pairs in RWIDE-α are manually captured using the *ProRAW Max* format of an Apple iPhone 15 Pro. We select Chongqing, China, as our location for capturing natural-haze images. Nestled among mountains and positioned at the confluence of the Yangtze and Jialing Rivers, the city provides optimal high-humidity conditions for data acquisition. 
 
-**RWIDE-β dataset**
+**RWIDE-β dataset**<br>
 Image pairs in RWIDE-β are handpicked from static webcams worldwide, which are sourced from freely available and legal websites . It consists of three subdatasets. RWIDE-β1 includes image pairs with varying haze depths, where each haze-free scene corresponds to three different haze scenes. RWIDE-β2 contains hazy images of single depth, with one haze scene per haze-free scene. RWIDE-β3 is designed for road environments. It includes various hazy road scenes, such as urban roads, rural roads, highways, etc. Additionally, RWIDE-β has thoroughly eliminated disruptive image content like website logos and icons.
 
 ![](imgs/rwide.jpg)
@@ -25,11 +25,11 @@ We have invested significant effort into collecting image pairs depicting variou
 
 Each image pair in RWIDE is accompanied by annotations. These annotations categorize various scene types based on two criteria. (1) Ground scene classification is based on the area where the haze occurs. Haze exhibits diverse formations and distributions across various scenes, resulting in distinctive hazy landscapes. (2) Sky scene classification relies on haze-free image sky statuses. The sky region presents unique characteristics as it lacks obstructed objects typically caused by haze. Neglecting this distinctiveness may introduce noise and artifacts. Note that images can have multiple annotation labels in scene classification, indicating the presence of multiple scene elements.
 
-**Ground scene classification.**<br>The ground scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). <br>
+**Ground scene classification**<br>The ground scenes in RWIDE are categorized into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). <br>
 
 ![](imgs/ground_scene.jpg)
 
-**Sky scene classification.** <br>The skies depicted by haze-free images in RWIDE are classified into five types:  No Sky Visible (NSV), Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
+**Sky scene classification** <br>The skies depicted by haze-free images in RWIDE are classified into five types:  No Sky Visible (NSV), Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC).
 
 ![](imgs/sky_scene.jpg)
 
