@@ -4,7 +4,7 @@ Image dehazing is a meaningful but ill-posed task aimed at generating clear imag
 
 #### Labels
 
-Scene classification:
+Ground scene classification:
 1. Mountains and Hills (MH)
 2. Lakes and Rivers (LR)
 3. Forests and Jungles (FJ)
@@ -12,7 +12,7 @@ Scene classification:
 5. Roadscape (RS)
 6. Snowscape (SS)
 
-Sky-type classification:
+Sky scene classification:
 
 1. No Sky Visible (NSV)
 2. Overcast with a Clear Sky (OCS)
@@ -22,7 +22,7 @@ Sky-type classification:
 
 #### Labeling Standard
 
-1. Scene classification depends on the location where haze is present. Haze manifests in various formations and distributions across different settings, creating unique hazy landscapes. RWIDE categorizes hazy scenes into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). Due to potential overlap, scene classifications are interconnected, allowing for **multiple selections**.
+1. Scene classification depends on the location where haze is present. Haze manifests in various formations and distributions across different settings, creating unique hazy landscapes. RWIDE categorizes ground scenes into six groups: Mountains and Hills (MH), Lakes and Rivers (LR), Forests and Jungles (FJ), Buildings and Cityscape (BC), Roadscape (RS), and Snowscape (SS). Due to potential overlap, scene classifications are interconnected, allowing for **multiple selections**.
 2. Sky-type classification is based on the sky conditions depicted in haze-free images. Despite the absence of haze in these scenes, the sky may exhibit various states, such as clear blue, cloudy, or overcast. In RWIDE, the skies depicted in haze-free images are categorized into five types: No Sky Visible (NSV), Overcast with a Clear Sky (OCS), Sunny with a Clear Blue Sky (SCBS), Overcast with a Cloudy Sky (OCCS), and Sunny with a Blue Sky and some Clouds (SBSC). Sky type classifications are independent, allowing only **single selection** for sky points.
 
 #### Tips
