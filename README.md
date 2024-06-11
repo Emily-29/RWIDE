@@ -33,13 +33,13 @@ Each image pair in RWIDE is accompanied by annotations. These annotations catego
 
 ![](imgs/sky_scene.jpg)
 
-Ground scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it is labeled "0". In contrast, sky scene classification remains independent. Annotation information for all images can be found in the provided annotation files (.*csv*).
+Ground scene classifications exhibit interdependence owing to overlap. A "1" label is assigned when specific scene elements are present; otherwise, it is labeled "0". In contrast, sky scene classification remains independent. Annotation information for all images can be found in the provided annotation files (.*CSV*).
 
 ## Download
 
 You can download the  **[RWIDE](https://sites.google.com/site/xiangtaooo/home)** dataset including annotation files  (~2.70 GB) .
 
-## Directory Structure
+## Directory structure
 
 The dataset we provide does not contain any offensive content. We, the authors, bear all responsibility for withdrawing our paper and data in case of violating licensing or privacy rights and for confirming the data license. The curated data is organized as below:
 
@@ -127,7 +127,7 @@ The dataset we provide does not contain any offensive content. We, the authors, 
 
 ## Why make this?
 
-Image dehazing is a crucial yet intrinsically challenging endeavor, focused on producing clear images from hazy ones. However, existing natural-haze image datasets lack diversity and an adequate number of hazy and haze-free image pairs. Dehazing natural-haze images is especially arduous due to the intricate haze distribution and distinctive optical effects, and current research frequently depends on synthetic or artificial-haze data, thereby constraining their relevance to real-world scenarios. To the best of our knowledge, RWIDE is the first real-world hazy image dataset with annotations for multiple scenes, which can promote further research on image restoration and dehazing tasks.
+Haze degrades the quality of captured images, significantly impacting the performance of various image processing algorithms and vision-driven applications such as image segmentation, object detection, and video surveillance. Current research typically employs synthetic- or artificial-haze image datasets, constraining their utility in real-world contexts. Existing natural-haze image datasets are often deficient in paired samples and fail to offer a broad spectrum of scene diversity. To address these limitations, we introduce the **R**eal-**W**orld **I**mage **DE**hazing dataset (RWIDE), which is the first real-world hazy image dataset with annotations for multiple scenes. RWIDE is primarily collected in "Fog City" Chongqing for nearly two years. As a city nestled in the mountains at the confluence of the Yangtze and Jialing rivers, Chongqing offers optimal high-humidity conditions ideal for capturing haze.
 
 ## How can I use this?
 
@@ -135,7 +135,7 @@ The dataset can be downloaded from the provided link. During training, validatio
 
 ## Who created this dataset?
 
-The dataset is created by the authors of the paper as well as the members of the Image Processing and Security Laboratory at Chongqing University.
+The dataset is created by the paper's authors and the members of the Image Processing and Security Laboratory at Chongqing University.
 
 ## License
 
@@ -143,7 +143,7 @@ Copyright (c) 2024 Image Processing and Security Laboratory
 
 The relevant codes is licensed under the MIT License. This dataset is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
 
-All DHAs adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD),  DehazeFormer (DF), PSMB and C2P in the links below.
+All image dehazing algorithms (DHAs) adheres to the license of the original authors. You can find the original source codes and their respective licenses for LGP, SLP, Light-DehazeNet (LD),  DehazeFormer (DF), PSMB and C2P in the links below.
 
 | Year | Title                                                        | DHA  | Paper                                                        | Code                                                         |
 | ---- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
